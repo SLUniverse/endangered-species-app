@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Confirm Deletion</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body class="bg-light">
+  <div class="container mt-5">
+    <div class="card shadow p-4">
+      <h2 class="text-center text-danger mb-4">⚠️ Confirm Removal</h2>
+
+      <p class="lead text-center">
+        Are you sure you want to permanently remove the following species from the endangered species database?
+      </p>
+
+      <div class="border rounded p-4 bg-white mb-4">
+        <h3 class="text-success"><strong><%= species.name %></strong></h3>
+        <p class="fst-italic text-muted"><%= species.scientificName %></p>
+
+        <% 
+          let badgeClass = 'badge-unknown';
+          if (species.threatLevel === 'Critically Endangered') badgeClass = 'badge-danger';
+          else if (species.threatLevel === 'Endangered') badgeClass = 'badge-warning';
+          else if (species.threatLevel === 'Vulnerable') badgeClass = 'badge-vulnerable';
+          else if (species.threatLevel === 'Least Concern') badgeClass = 'badge-success';
+          else if (species.threatLevel === 'Extinct in the Wild') badgeClass = 'badge-extinct';
+        %>
+        <p>
+          <strong>Threat Level:</strong> <span class="<%= badgeClass %>"><%= species.threatLevel %></span>
+        </p>
+
+        <p><strong>Habitat:</strong> <%= species.habitat %></p>
+
+        <% if (species.description) { %>
+          <p><strong>Description:</strong> <%= species.description %></p>
+        <% } %>
+      </div>
+
+      <div class="d-flex justify-content-between">
+        <a href="/" class="btn btn-secondary">⬅️ Cancel</a>
+        <form action="/delete/<%= species._id %>" method="POST">
+          <button type="submit" class="btn btn-danger">🗑️ Yes, Remove This Species</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Endangered Species</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body class="bg-light">
+<div class="container mt-5">
+  <div class="card p-4 shadow">
+    <h1 class="mb-4 text-center text-success">🌍 Endangered Species Tracker</h1>
+
+    <% if (!query) { %>
+      <div class="d-flex justify-content-end mb-3">
+        <a href="/add" class="btn btn-success">➕ Add New Species</a>
+      </div>
+
+      <form action="/" method="GET" class="mb-4">
+        <div class="row g-2">
+          <div class="col-md-8">
+            <input type="text" class="form-control" placeholder="Search..." name="query" required>
+          </div>
+          <div class="col-md-4">
+            <select class="form-select" name="searchBy">
+              <option value="name">Name</option>
+              <option value="threatLevel">Threat Level</option>
+              <option value="keyword">Keyword</option>
+            </select>
+          </div>
+        </div>
+        <div class="text-end mt-2">
+          <button type="submit" class="btn btn-primary">🔍 Search</button>
+        </div>
+      </form>
+    <% } else { %>
+      <div class="d-flex justify-content-between mb-4">
+        <a href="/" class="btn btn-outline-secondary">🔁 New Search</a>
+        <a href="/add" class="btn btn-success">➕ Add New Species</a>
+      </div>
+    <% } %>
+
+    <% if (error) { %>
+      <div class="alert alert-danger text-center"><%= error %></div>
+    <% } else if (speciesList.length === 0 && query) { %>
+      <div class="alert alert-warning text-center">
+        ❌ No species found for "<strong><%= query %></strong>".
+      </div>
+    <% } else if (speciesList.length > 0) { %>
+      <div class="table-responsive">
+        <table class="table table-bordered table-striped align-middle">
+          <thead class="table-success">
+            <tr>
+              <th>Name</th>
+              <th>Scientific Name</th>
+              <th>Threat Level</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+          <% speciesList.forEach(species => { %>
+            <tr>
+              <td><%= species.name %></td>
+              <td><i><%= species.scientificName %></i></td>
+              <td class="text-center">
+                <% 
+                  let badgeClass = 'badge-unknown';
+                  if (species.threatLevel === 'Critically Endangered') badgeClass = 'badge-danger';
+                  else if (species.threatLevel === 'Endangered') badgeClass = 'badge-warning';
+                  else if (species.threatLevel === 'Vulnerable') badgeClass = 'badge-vulnerable';
+                  else if (species.threatLevel === 'Least Concern') badgeClass = 'badge-success';
+                  else if (species.threatLevel === 'Extinct in the Wild') badgeClass = 'badge-extinct';
+                %>
+                <span class="<%= badgeClass %>"><%= species.threatLevel %></span>
+              </td>
+              <td>
+                <div class="d-flex flex-column flex-md-row gap-2">
+                  <a href="/details/<%= species._id %>" class="btn btn-info btn-sm">Details</a>
+                  <a href="/edit/<%= species._id %>" class="btn btn-warning btn-sm">Edit</a>
+                  <a href="/delete/<%= species._id %>" class="btn btn-danger btn-sm">Delete</a>
+                </div>
+              </td>
+            </tr>
+          <% }) %>
+          </tbody>
+        </table>
+      </div>
+    <% } %>
+  </div>
+</div>
+</body>
+</html>

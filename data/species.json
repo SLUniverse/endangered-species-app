@@ -1,0 +1,212 @@
+[
+  {
+    "name": "Amur Leopard",
+    "scientificName": "Panthera pardus orientalis",
+    "threatLevel": "Critically Endangered",
+    "habitat": "Temperate forests - Russia, China",
+    "description": "The Amur leopard is critically endangered due to habitat loss and poaching."
+  },
+  {
+    "name": "Javan Rhino",
+    "scientificName": "Rhinoceros sondaicus",
+    "threatLevel": "Critically Endangered",
+    "habitat": "Tropical forests - Indonesia",
+    "description": "The Javan Rhino is one of the rarest rhinos with only a few left in Ujung Kulon National Park."
+  },
+  {
+    "name": "Vaquita",
+    "scientificName": "Phocoena sinus",
+    "threatLevel": "Critically Endangered",
+    "habitat": "Marine - Gulf of California, Mexico",
+    "description": "The vaquita is the world's rarest marine mammal and is on the edge of extinction."
+  },
+  {
+    "name": "Mountain Gorilla",
+    "scientificName": "Gorilla beringei beringei",
+    "threatLevel": "Endangered",
+    "habitat": "Montane forests - Central Africa",
+    "description": "Mountain gorillas are found in forested mountains and are threatened by habitat destruction."
+  },
+  {
+    "name": "Asian Elephant",
+    "scientificName": "Elephas maximus",
+    "threatLevel": "Endangered",
+    "habitat": "Tropical forests - South and Southeast Asia",
+    "description": "The Asian elephant is endangered due to habitat loss, degradation, and fragmentation."
+  },
+  {
+    "name": "Snow Leopard",
+    "scientificName": "Panthera uncia",
+    "threatLevel": "Vulnerable",
+    "habitat": "Mountain ranges - Central and South Asia",
+    "description": "Snow leopards are elusive big cats threatened by poaching and habitat loss."
+  },
+  {
+    "name": "Giant Panda",
+    "scientificName": "Ailuropoda melanoleuca",
+    "threatLevel": "Vulnerable",
+    "habitat": "Temperate forests - China",
+    "description": "The giant panda is a conservation icon and mainly threatened by habitat loss."
+  },
+  {
+    "name": "Blue Whale",
+    "scientificName": "Balaenoptera musculus",
+    "threatLevel": "Endangered",
+    "habitat": "Oceans worldwide",
+    "description": "The blue whale is the largest animal ever and is endangered due to past whaling."
+  },
+  {
+    "name": "Sea Otter",
+    "scientificName": "Enhydra lutris",
+    "threatLevel": "Endangered",
+    "habitat": "Coastal areas - Pacific Ocean",
+    "description": "Sea otters help maintain kelp forest ecosystems and are threatened by oil spills."
+  },
+  {
+    "name": "African Wild Dog",
+    "scientificName": "Lycaon pictus",
+    "threatLevel": "Endangered",
+    "habitat": "Savannas and open plains - Africa",
+    "description": "These social predators are endangered due to habitat loss and disease."
+  },
+  {
+    "name": "Orangutan",
+    "scientificName": "Pongo abelii",
+    "threatLevel": "Critically Endangered",
+    "habitat": "Rainforests - Borneo and Sumatra",
+    "description": "Orangutans are critically endangered due to deforestation and illegal pet trade."
+  },
+  {
+    "name": "Saola",
+    "scientificName": "Pseudoryx nghetinhensis",
+    "threatLevel": "Critically Endangered",
+    "habitat": "Annamite Mountains - Laos and Vietnam",
+    "description": "Also known as the 'Asian Unicorn', the saola is rarely seen and critically endangered."
+  },
+  {
+    "name": "Red Panda",
+    "scientificName": "Ailurus fulgens",
+    "threatLevel": "Endangered",
+    "habitat": "Temperate forests - Himalayas",
+    "description": "Red pandas are threatened by habitat loss and poaching."
+  },
+  {
+    "name": "Hawksbill Turtle",
+    "scientificName": "Eretmochelys imbricata",
+    "threatLevel": "Critically Endangered",
+    "habitat": "Tropical coral reefs - worldwide",
+    "description": "Hunted for their beautiful shells, hawksbill turtles are critically endangered."
+  },
+  {
+    "name": "Yangtze Giant Softshell Turtle",
+    "scientificName": "Rafetus swinhoei",
+    "threatLevel": "Critically Endangered",
+    "habitat": "Rivers and lakes - China and Vietnam",
+    "description": "One of the rarest turtles in the world, with only a few known individuals remaining."
+  },
+  {
+    "name": "Kakapo",
+    "scientificName": "Strigops habroptilus",
+    "threatLevel": "Critically Endangered",
+    "habitat": "Forests - New Zealand",
+    "description": "The kakapo is a flightless parrot that has been brought back from the brink of extinction."
+  },
+  {
+    "name": "Addax",
+    "scientificName": "Addax nasomaculatus",
+    "threatLevel": "Critically Endangered",
+    "habitat": "Deserts - Sahara",
+    "description": "The addax is a desert antelope nearly extinct in the wild due to overhunting."
+  },
+  {
+    "name": "Philippine Eagle",
+    "scientificName": "Pithecophaga jefferyi",
+    "threatLevel": "Critically Endangered",
+    "habitat": "Forests - Philippines",
+    "description": "One of the largest and rarest eagles in the world."
+  },
+  {
+    "name": "Gharial",
+    "scientificName": "Gavialis gangeticus",
+    "threatLevel": "Critically Endangered",
+    "habitat": "Rivers - Indian subcontinent",
+    "description": "Gharials are fish-eating crocodiles with long narrow snouts."
+  },
+  {
+    "name": "Pygmy Three-Toed Sloth",
+    "scientificName": "Bradypus pygmaeus",
+    "threatLevel": "Critically Endangered",
+    "habitat": "Isla Escudo de Veraguas - Panama",
+    "description": "Found only on a single island, this sloth is at risk from habitat disturbance."
+  },
+  {
+    "name": "Axolotl",
+    "scientificName": "Ambystoma mexicanum",
+    "threatLevel": "Critically Endangered",
+    "habitat": "Lakes - Mexico",
+    "description": "Axolotls are unique amphibians that remain aquatic their whole lives."
+  },
+  {
+    "name": "Northern Bald Ibis",
+    "scientificName": "Geronticus eremita",
+    "threatLevel": "Endangered",
+    "habitat": "Semi-arid habitats - Middle East and North Africa",
+    "description": "An ancient bird once thought extinct in Europe."
+  },
+  {
+    "name": "Sri Lankan Leopard",
+    "scientificName": "Panthera pardus kotiya",
+    "threatLevel": "Endangered",
+    "habitat": "Forests - Sri Lanka",
+    "description": "A subspecies of leopard facing threats from habitat loss and poaching."
+  },
+  {
+    "name": "Bonobo",
+    "scientificName": "Pan paniscus",
+    "threatLevel": "Endangered",
+    "habitat": "Rainforests - Democratic Republic of Congo",
+    "description": "Closely related to humans, bonobos are peaceful primates facing severe habitat loss."
+  },
+  {
+    "name": "Irrawaddy Dolphin",
+    "scientificName": "Orcaella brevirostris",
+    "threatLevel": "Endangered",
+    "habitat": "Coastal and freshwater areas - Southeast Asia",
+    "description": "A dolphin species threatened by fishing and habitat degradation."
+  },
+  {
+    "name": "Bornean Orangutan",
+    "scientificName": "Pongo pygmaeus",
+    "threatLevel": "Critically Endangered",
+    "habitat": "Rainforests - Borneo",
+    "description": "These great apes are critically endangered due to palm oil deforestation."
+  },
+  {
+    "name": "Western Lowland Gorilla",
+    "scientificName": "Gorilla gorilla gorilla",
+    "threatLevel": "Critically Endangered",
+    "habitat": "Tropical forests - Central Africa",
+    "description": "The most widespread gorilla subspecies, still severely threatened by poaching and disease."
+  },
+  {
+    "name": "Scimitar-Horned Oryx",
+    "scientificName": "Oryx dammah",
+    "threatLevel": "Extinct in the Wild",
+    "habitat": "Deserts - North Africa",
+    "description": "This desert antelope now survives only in captivity and reintroduction programs."
+  },
+  {
+    "name": "Andean Cat",
+    "scientificName": "Leopardus jacobita",
+    "threatLevel": "Endangered",
+    "habitat": "High-altitude regions - Andes",
+    "description": "One of the rarest and least known wild cats in the world."
+  },
+  {
+    "name": "Southern River Terrapin",
+    "scientificName": "Batagur affinis",
+    "threatLevel": "Critically Endangered",
+    "habitat": "Rivers - Southeast Asia",
+    "description": "Once thought extinct, this turtle is making a comeback thanks to conservation."
+  }
+]
